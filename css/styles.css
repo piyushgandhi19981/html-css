@@ -624,6 +624,7 @@ button{
 .update-container{
   display: flex;
   gap: 30px;
+  padding-left: 10px;
 }
 
 .update-item{
@@ -679,6 +680,7 @@ button{
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  flex: 0 0 auto;
 }
 
 .hiring-container h1{
@@ -816,6 +818,12 @@ button{
     width: 55px;
   }
 
+  .webinar-container{
+    overflow-x: auto;
+    width: 60%;
+    max-width: 1200px;
+  }
+
   .head-webinar{
     height: 477px;
     width: 300px;
@@ -823,12 +831,20 @@ button{
   }
 
   .head-webinar img{
-    height: 200px;
+    height: 172px;
     width: 300px;
   }
 
+  .carousel-item {
+    display: none;
+  }
+
+  .carousel-item:nth-child(3n+2){
+    display: block;
+  }
+
   .other-webinar img{
-    height: 200px;
+    height: 172px;
     width: 300px;
   }
 
@@ -844,14 +860,24 @@ button{
 
   .hiring-container{
     height: 460px;
-    width: 190px;
+    width: 260px;
     padding: 20px;
     background: #FDAF4D;
     border-radius: 8px;
   }
 
+  .update-container{
+    overflow-x: auto;
+    width: 60%;
+    max-width: 1200px;
+  }
+
+  .update-item{
+    min-width: 190px;
+  }
+
   .apply{
-    width: 190px;
+    width: 260px;
     text-align: center;
   }
 }
